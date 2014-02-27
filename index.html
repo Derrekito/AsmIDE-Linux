@@ -38,30 +38,30 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <h1>
-<a name="how-to-use-asmide-in-linux-using-wine" class="anchor" href="#how-to-use-asmide-in-linux-using-wine"><span class="octicon octicon-link"></span></a>How to Use AsmIDE in Linux Using Wine</h1>
-
-<h2>
+        <h2>
 <a name="install-wine" class="anchor" href="#install-wine"><span class="octicon octicon-link"></span></a>Install Wine</h2>
 
-<p>WineHQ.org describes Wine as “a translation layer (a program loader) capable of running Windows applications on Linux and other POSIX compatible operating systems. Windows programs running in Wine act as native programs would, running without the performance or memory usage penalties of an emulator, with a similar look and feel to other applications on your desktop.”</p>
+<p>WineHQ.org describes Wine as </p>
 
-<p>Debian based Linux users can install Wine by executing the following terminal command:
-<code>sudo apt-get install wine</code></p>
+<blockquote>
+<p>a translation layer (a program loader) capable of running Windows applications on Linux and other POSIX compatible operating systems. Windows programs running in Wine act as native programs would, running without the performance or memory usage penalties of an emulator, with a similar look and feel to other applications on your desktop.</p>
+</blockquote>
+
+<p>Debian based Linux users can install Wine by executing the following terminal command:</p>
+
+<p><strong>sudo apt-get install wine</strong></p>
 
 <p>Check out <a href="http://www.winehq.org/download/">WineHQ</a> to see alternative installation methods.</p>
 
 <h2>
 <a name="install-asmide" class="anchor" href="#install-asmide"><span class="octicon octicon-link"></span></a>Install AsmIDE</h2>
 
-<p>For full functionality, after installing Wine, place AsmIDE and it's related files into “/home/user_name/.wine/drive_c/Dragon12P”</p>
-
-<p>Since this is proprietary software you will have to acquire it yourself. To run the program, “wine ~/.wine/drive_c/Dragon12P/AsmIDE.exe” would normally have to be put into terminal; however, for the sake of convince use the provided script run AsmIDE. After downloading the script you will need to add executioon rights by typing <strong>chmod +x asmide</strong> while in the same folder as the script.</p>
+<p>Since this is proprietary software you will have to acquire it yourself. To run the program <strong>wine ~/.wine/drive_c/Dragon12P/AsmIDE.exe</strong> would normally have to be put into terminal; however, for the sake of convince use the provided script run AsmIDE. After downloading the script you will need to add execution rights by typing <strong>chmod +x asmide</strong> while in the same folder as the script.</p>
 
 <h2>
 <a name="how-to-use-asmide" class="anchor" href="#how-to-use-asmide"><span class="octicon octicon-link"></span></a>How to Use AsmIDE</h2>
 
-<p>After completing the script correctly, type “asmide” into terminal to execute the program. For now, ignore any errors about the “COM” port and click “OK”. At this point AsmIDE has full functionality as it would in Windows except for terminal and serial support. The Assembly program can be written here or using any other text editor (use the file extension “.asm”). The desired functionality of this program is to provide a way to compile code to a usable .S1 record. To send the .S1 record to the Dragon12 Board refer to the Minicom Tutorial. Before compiling any code, verify that AsmIDE is set to the 6812 family chip set by going to View -&gt; Options. Select the “Assembler” tab and compare with the image below to verify your settings.</p>
+<p>After completing the script correctly, type <strong>asmide</strong> into terminal to execute the program. For now, ignore any errors about the “COM” port and click <em>OK</em>. At this point AsmIDE has full functionality as it would in Windows except for terminal and serial support. The Assembly program can be written here or using any other text editor (use the file extension <em>.asm</em>). The desired functionality of this program is to provide a way to compile code to a usable S1 record. To send the S1 record to the Dragon12 Board refer to the Minicom Tutorial. Before compiling any code, verify that AsmIDE is set to the 6812 family chip set by going to View -&gt; Options. Select the <em>Assembler</em> tab and compare with the image below to verify your settings.</p>
 
 <p><img src="http://i.imgur.com/geS8WqV.png" alt=""></p>
       </section>
